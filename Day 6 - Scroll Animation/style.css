@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffebcd;
+  overflow-x: hidden;
+}
+h1{
+  font-size: 40px;
+  margin: 10px;
+}
+.box{
+  background-color: steelblue;
+  height: 200px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+  /* initally the boxes wont be visible */
+  /* odd boxes come from right  */
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+.box:nth-of-type(even){
+  /* even boxes come from left of the screen  */
+  transform: translateX(-400%);
+}
+.box.show{
+  /* on adding show class boxes will be visible  */
+  transform: translateX(0);
+}
+.box{
+  font-size: 30px;
+  color: #fff;
+}
