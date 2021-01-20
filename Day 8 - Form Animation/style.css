@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,700;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: steelblue;
+  font-family: 'Mulish', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.container{
+  /* Giving a darkish background to the form  */
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  color: #fff;
+}
+.container h1{
+  margin-bottom: 30px;
+  text-align: center;
+}
+input{
+  display: block;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  background-color: transparent;
+  padding: 10px 0;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  width: 300px;
+}
+input:focus,
+input:valid{
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+.form-control{
+  margin-bottom: 20px;
+  position: relative;
+}
+.form-control label{
+  position: absolute;
+  top:15px;
+  left: 5px;
+}
+.form-control label span{
+  display: inline-block;
+  transition: 0.3s ease;
+}
+/* Moving the labels up when they are focused or when there is text in the input  */
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+  
+  color: lightblue;
+  transform: translateY(-30px);
+}
+.btn{
+  width: 100%;
+  font-family: inherit;
+  background-color: lightblue;
+  border:0;
+  padding: 10px 0;
+  margin: 10px 0;
+  cursor: pointer;
+}
+/* Creating the button click effect  */
+.btn:focus,.btn:active{
+  outline: 0;
+  transform: scale(0.98);
+}
+.text{
+  margin-top: 10px;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color: lightblue;
+}
