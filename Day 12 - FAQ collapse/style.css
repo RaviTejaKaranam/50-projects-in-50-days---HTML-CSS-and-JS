@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400;2,300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  background-color: #e1e1e1;
+}
+.container h1{
+  text-align: center;
+  margin: 30px auto;
+}
+.FAQ{
+  height: 60px;
+  margin-bottom: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  border: 1px solid #000;
+  overflow: hidden;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  transition: height 0.3s ease;
+}
+.question{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-weight: bold;
+  
+}
+.question p{
+  margin-right: 10px;
+}
+.answer{
+  padding: 0 20px;
+  font-weight: 300;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+i.fas{
+  cursor: pointer;
+}
+.FAQ.active{
+  height: 100px;
+  background-color: #e8e8e8;
+}
+.FAQ.active .answer{
+  opacity: 1;
+}
