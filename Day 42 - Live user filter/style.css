@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f9f0;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.container{
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  width: 300px;
+  overflow: hidden;
+}
+.header{
+  background-color: #3e57db;
+  padding: 20px 30px;
+  color: #fff;
+}
+.subtitle{
+  opacity: 0.8;
+  display: inline-block;
+  margin: 10px 0;
+}
+.filter{
+  background-color: rgba(0,0,0,0.3);
+  border: none;
+  width: 100%;
+  padding: 10px 15px;
+  color: #fff;
+  font-family: inherit;
+}
+.filter::placeholder{
+  color: #aaa;
+}
+.filter:focus{
+  outline: none;
+}
+.user-list{
+  max-height: 400px;
+  overflow-y: auto;
+}
+.user-list li{
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #eee;
+}
+.user-list li:last-child{
+  border: none;
+}
+.user-list img{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.user-list .user-info{
+  margin-left: 10px;
+}
+.user-list .hide{
+  display: none;
+}
